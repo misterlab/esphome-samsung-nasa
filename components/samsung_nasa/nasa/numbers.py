@@ -122,7 +122,7 @@ numbers = {
     },
     0x8238: {
         NASA_LABEL: "VAR_OUT_CONTROL_CFREQ_COMP1",
-        NASA_MODE: CONTROLLER_MODE_NON_FSV,
+        NASA_MODE: CONTROLLER_MODE_DEFAULT,
         CONF_DEFAULTS: lambda: {
             "min_value": 50,
             "max_value": 150,

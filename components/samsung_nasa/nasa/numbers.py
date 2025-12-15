@@ -122,14 +122,9 @@ numbers = {
     },
     0x8238: {
         NASA_LABEL: "VAR_OUT_CONTROL_CFREQ_COMP1",
-        NASA_MODE: 2,
-        CONF_DEFAULTS: lambda: {
-            "min_value": 50,
-            "max_value": 150,
-            "step": 10,
-            "unit_of_measurement": "%",
-            "icon": "mdi:speedometer",
-        }
+        NASA_MODE: CONTROLLER_MODE_CONTROL,
+        CONF_DATA: cmd_numeric_data(50, 150, 10),
+        CONF_DEFAULTS: number_defaults()
     },
     0x424A: {
         NASA_LABEL: "VAR_IN_FSV_1011",

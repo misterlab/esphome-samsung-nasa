@@ -129,7 +129,7 @@ numbers = {
     0x8236: {
         NASA_LABEL: "VAR_OUT_CONTROL_ORDER_CFREQ_COMP1",
         NASA_MODE: CONTROLLER_MODE_CONTROL,
-        CONF_DATA: cmd_numeric_data(0, 150, 1),
+        CONF_DATA: cmd_numeric_data(0, 80, 1),
         CONF_DEFAULTS: number_defaults()
     },
     0x424A: {

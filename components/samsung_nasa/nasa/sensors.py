@@ -250,7 +250,7 @@ sensors = {
     },
     0x8238: {
         NASA_LABEL: "VAR_OUT_CONTROL_CFREQ_COMP1",
-        NASA_MODE: CONTROLLER_MODE_CONTROL, // Allows writing values
+        NASA_MODE: CONTROLLER_MODE_CONTROL,
         CONF_DEFAULTS: sensor_defaults(
             accuracy_decimals=0,
             icon="mdi:speedometer",

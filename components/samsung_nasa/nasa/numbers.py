@@ -120,6 +120,12 @@ numbers = {
         CONF_ENTITY_CATEGORY: ENTITY_CATEGORY_CONFIG,
         CONF_DEFAULTS: temperature_defaults()
     },
+    0x8231: {
+        NASA_LABEL: "NASA_OUTDOOR_HEATING_PERCENT",
+        NASA_MODE: CONTROLLER_MODE_CONTROL,
+        CONF_DATA: cmd_numeric_data(50, 150, 10),
+        CONF_DEFAULTS: number_defaults()
+    },
     0x8236: {
         NASA_LABEL: "VAR_OUT_CONTROL_ORDER_CFREQ_COMP1",
         NASA_MODE: CONTROLLER_MODE_CONTROL,

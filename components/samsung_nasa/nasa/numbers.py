@@ -120,7 +120,7 @@ numbers = {
         CONF_ENTITY_CATEGORY: ENTITY_CATEGORY_CONFIG,
         CONF_DEFAULTS: temperature_defaults()
     },
-    0x42F1: {
+    0x8238: {
         NASA_LABEL: "VAR_OUT_CONTROL_DEMAND_RATIO",
         NASA_MODE: CONTROLLER_MODE_CONTROL,
         CONF_DEFAULTS: {

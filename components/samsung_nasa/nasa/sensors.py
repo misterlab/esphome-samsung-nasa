@@ -248,6 +248,15 @@ sensors = {
             filters=[{CONF_DELTA: 1}]
         )
     },
+    0x8238: {
+        NASA_LABEL: "VAR_OUT_CONTROL_CFREQ_COMP1",
+        NASA_MODE: CONTROLLER_MODE_CONTROL, // Allows writing values
+        CONF_DEFAULTS: sensor_defaults(
+            accuracy_decimals=0,
+            icon="mdi:speedometer",
+            unit_of_measurement="%",
+        )
+    },
     0x8413: {
         NASA_LABEL: "LVAR_OUT_CONTROL_WATTMETER_1W_1MIN_SUM",
         NASA_MODE: CONTROLLER_MODE_STATUS,

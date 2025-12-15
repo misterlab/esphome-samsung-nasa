@@ -121,14 +121,14 @@ numbers = {
         CONF_DEFAULTS: temperature_defaults()
     },
     0x8238: {
-        NASA_LABEL: "VAR_OUT_CONTROL_DEMAND_RATIO",
-        NASA_MODE: CONTROLLER_MODE_CONTROL,
-        CONF_DEFAULTS: {
+        NASA_LABEL: "VAR_OUT_CONTROL_CFREQ_COMP1",
+        NASA_MODE: CONTROLLER_MODE_NON_FSV,
+        CONF_DEFAULTS: lambda: {
             "min_value": 50,
-            "max_value": 100,
+            "max_value": 150,
             "step": 10,
             "unit_of_measurement": "%",
-            "icon": "mdi:speedometer"
+            "icon": "mdi:speedometer",
         }
     },
     0x424A: {
